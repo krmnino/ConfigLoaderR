@@ -46,7 +46,7 @@ ConfigLoader_init <- function(path){
   
   # Remove blank entries 
   for(i in 1:length(entries)){
-    if(nchar(entries[i]) != 0){
+    if(isTRUE(nchar(entries[i]) != 0)){
       temp <- append(temp, entries[i])
     }
   }

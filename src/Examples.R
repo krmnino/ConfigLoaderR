@@ -1,8 +1,8 @@
 source("ConfigLoader.R")
 
-ConfigLoader_set_env("C:/Users/kurt_/github/ConfigLoader/src/r")
+ConfigLoader_set_env("~/remote/github/ConfigLoaderR/src")
 
-cf <- ConfigLoader_init("../../tests/testconfig2.cl")
+cf <- ConfigLoader_init("test.cl")
 
 ret <- ConfigLoader_get_value(cf, "cities")
 
